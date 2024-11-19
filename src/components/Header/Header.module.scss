@@ -1,0 +1,39 @@
+.nav {
+   padding: 20px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+
+
+}
+
+.logo {
+   font-family: "Candal", sans-serif;
+   font-size: 32px;
+   font-weight: 700;
+   text-decoration: none;
+   color: black;
+   
+}
+.menu {
+   display: flex;
+   gap: 24px;
+
+   a {
+      color: black;
+      text-decoration: none;
+   }
+}
+.search {
+   max-width: 500px;
+   width: 100%;
+   padding: 15px;
+   border-radius: 62px;
+   background-color: #f0f0f0;
+   border: none;
+
+   background-image: url(/search-icon.svg);
+   background-position: 20px;
+   padding-left: 52px;
+}

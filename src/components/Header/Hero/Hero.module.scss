@@ -1,0 +1,96 @@
+.hero {
+    background-color: #F2F0F1;
+    padding: 80px 0 0;
+
+    img {
+        max-width: 600px;
+        width: 100%;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        @media (max-width: 800px) {
+          grid-template-columns: 1fr;
+        }
+    }
+
+    .box {
+
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+        h1 {
+            font-family: "Candal", sans-serif;
+            // font-size: 64px;
+            font-size: clamp(2.25rem, 1.614rem + 3.18vw, 4rem);
+            max-width: 570px;
+            line-height: 1.1;
+        }
+        p {
+            max-width: 560px;
+            color: #00000099;
+
+            @media (max-width: 800px) {
+              max-width: 350px;
+            }
+        }
+        button {
+            max-width: 210px;
+            padding: 15px 65px;
+            border: none;
+            background: #000;
+            color: #fff;
+            border-radius: 62px;
+
+            @media (max-width: 800px) {
+              max-width: max-content;
+            }
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-size: 40px;
+                font-weight: 700;
+            }
+            
+
+        }
+    }
+}
+
+.row {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    @media (max-width: 800px) {
+
+    }
+    div:nth-child(1) {
+        padding-right: 32px;
+    }
+    div:nth-child(2) {
+        border-left: 1px solid #00000099;
+        border-right: 1px solid #00000099;
+        padding: 0 32px;
+
+
+        @media (max-width: 800px) {
+
+        }
+
+    }
+    div:nth-child(3) {
+        padding-left: 32px;
+
+        @media (max-width: 800px) {
+        }
+    }
+    
+}

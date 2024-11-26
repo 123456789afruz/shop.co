@@ -70,26 +70,34 @@
 
     @media (max-width: 800px) {
         flex-direction: column;
+        text-align: center;
         gap: 30px;
     }
     div:nth-child(1) {
         padding-right: 32px;
+        @media (max-width: 800px) {
+          padding-right: 0;
+        }
     }
     div:nth-child(2) {
         border-left: 1px solid #00000099;
         border-right: 1px solid #00000099;
         padding: 0 32px;
-
-
         @media (max-width: 800px) {
-
+            padding: 0;
+            border: none;
         }
+        
+
+
+        
 
     }
     div:nth-child(3) {
         padding-left: 32px;
 
         @media (max-width: 800px) {
+            padding-left: 0;
         }
     }
     

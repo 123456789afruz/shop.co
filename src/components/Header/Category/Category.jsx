@@ -3,17 +3,17 @@ import s from './Category.module.scss'
 import SectionTitle from '../SectionTitle/SectionTitle'
 import Card from '../Card/Card'
 
-import Product from '/public/products.json'
+import Product from '/src/products.json'
 
-const Category = () => {
+const Category = ({ title }) => {
   return (
     <>
       <section className={s.category}>
          <div className="container">
-            <SectionTitle orient='center'>New arrivals</SectionTitle>
+            <SectionTitle orient='center'>{title}</SectionTitle>
             <div className={s.wrapper}>
 
-               {Product.map(card => (
+               {Product.slice(0,4).map(card => (
                   <Card key={card.id} image={card.image} rate='/rate-4.5.png' name={card.name} price={card.price}/>
                ))}
 
@@ -26,7 +26,7 @@ const Category = () => {
                <Card image='/category-3.png' name='CHECKERED SHIRT' rate='/rate-4.5.png' price='$180'/>
                <Card image='/category-4.png' name='SLEEVE STRIPED T-SHIRT' rate='/rate-4.5.png' price='$130'/> */}
             </div>
-            <button>View All</button>
+            <button className={s.btn}>View All</button>
          </div>
       </section>
     </>

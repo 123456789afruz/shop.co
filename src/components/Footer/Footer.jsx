@@ -12,10 +12,10 @@ const Footer = () => {
                   <h2>SHOP.CO</h2>
                   <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
                   <div className={s.image}>
-                    <img src="/footer-img1.svg" alt="" />
-                    <img src="/footer-img2.svg" alt="" />
-                    <img src="/footer-img3.svg" alt="" />
-                    <img src="/footer-img4.svg" alt="" />
+                    <img src="/footer-img1.png" alt="" />
+                    <img src="/footer-img2.png" alt="" />
+                    <img src="/footer-img3.png" alt="" />
+                    <img src="/footer-img4.png" alt="" />
                   </div>
                 </div>
                 </div>

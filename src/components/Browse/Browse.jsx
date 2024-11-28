@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Browse.module.scss'
-import SectionTitle from '../Header/SectionTitle/SectionTitle'
+import SectionTitle from '../SectionTitle/SectionTitle'
 
 const Browse = () => {
   return (

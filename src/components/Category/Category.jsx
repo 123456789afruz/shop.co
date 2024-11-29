@@ -2,8 +2,10 @@ import React from 'react'
 import s from './Category.module.scss'
 import SectionTitle from '../SectionTitle/SectionTitle'
 import Card from '../Card/Card'
+import Products from '/public/products.json'
 
-import Product from '/src/products.json'
+
+import { Link } from 'react-router-dom'
 
 const Category = ({ title }) => {
   return (
@@ -13,8 +15,10 @@ const Category = ({ title }) => {
             <SectionTitle orient='center'>{title}</SectionTitle>
             <div className={s.wrapper}>
 
-               {Product.slice(0,4).map(card => (
+               {Products.slice(0,4).map(card => (
+                  <Link to={`/product/${card.id}`}>
                   <Card key={card.id} image={card.image} rate='/rate-4.5.png' name={card.name} price={card.price}/>
+                  </Link>
                ))}
 
 

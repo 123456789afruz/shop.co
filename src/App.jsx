@@ -6,6 +6,7 @@ import Shop from './pages/Shop'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Product from './pages/Product'
+import Upto from './components/Upto/Upto'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/shop' element={<Shop/>}/>
         <Route path='/product/:id' element={<Product />}/>
       </Routes>
+      <Upto/>
       <Footer/>
       
     </>

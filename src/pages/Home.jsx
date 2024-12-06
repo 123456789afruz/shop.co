@@ -11,7 +11,7 @@ const Home = () => {
       <Hero/>
       <Brands/>
       <Category  title='NEW ARRIVALS' num="4,8"/>
-      <Category  title='Top selling' num="4,8"/>
+      {/* <Category  title='Top selling' num="4,8"/> */}
       <Browse/>
       <Our/>
     </>

@@ -1,21 +1,12 @@
 import React, { useState } from 'react'
 import s from './Header.module.scss'
 import { Link } from 'react-router-dom'
+import { useAppContext } from '../../context'
 
 
 const Header = () => {
 
-  const [active, setActive] = useState(false)
-
-
-  const toggleBurger = () => {
-    setActive(!active)
-  }
-
-
-  const closeMenu = () => {
-    setActive(false)
-  }
+  const {active, toggleBurger, closeMenu} = useAppContext()
 
 
   console.log(active);

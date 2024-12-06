@@ -1,31 +1,51 @@
-.card{
-   .wrap {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      .img {
-         // max-width: 300px;
-         // max-height: 500px;
-         border-radius: 20px;
-         width: 100%;
-         aspect-ratio: 0.7;
+.card {
+   // max-width: 600px;
 
-      }
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   img {
+       max-width: 100%;
+       border-radius: 20px;
+       display: block;
 
-      b {
-         font-size: 24px;
-      }
-      h3 {
-         max-width: 200px;
-      }
+       aspect-ratio: 1/1.5;
+       object-fit: cover;
 
+       :nth-child(1) {
+           aspect-ratio: 1;
+           object-fit: cover;
+           object-position: center;
+       }
+   }
+
+   h3 {
+       font-size: 20px;
+       margin-top: 8px;
+   }
+
+   b {
+       font-size: 24px;
    }
 }
 
 
-.rate {
-   max-width: 150px;
-   width: 100%;
-   aspect-ratio: 3;
-   object-fit: contain;
+.stars {
+   display: flex;
+   gap: 5px;
+   cursor: pointer;
+
+   span {
+       font-size: 20px;
+       color: gray; // Цвет неактивных звёзд
+       transition: color 0.3s ease;
+   }
+
+   .activeStar {
+       color: gold; // Цвет активных звёзд
+   }
+
+   .inactiveStar {
+       color: gray; // Цвет неактивных звёзд
+   }
 }
